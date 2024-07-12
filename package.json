@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsc -b && node dist/index.js"
+    "dev": "npx tsc -b && node dist/index.js",
+    "deploy":"git pull origin main && npm install && npx tsc -b && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
